@@ -1,16 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const addBtn = document.getElementById("add-btn");
     const entity1Input = document.getElementById("entity1");
     const entity2Input = document.getElementById("entity2");
     const dataTable = document.querySelector("#data-table tbody");
+    const clearBtn = document.getElementById("clear-btn");
 
-    // Cargar datos almacenados localmente
     for (let i = 0; i < localStorage.length; i++) {
         const data = JSON.parse(localStorage.getItem(localStorage.key(i)));
         addRowToTable(data.entity1, data.entity2);
     }
 
-    addBtn.addEventListener("click", function() {
+    addBtn.addEventListener("click", function () {
         const entity1Value = entity1Input.value.trim();
         const entity2Value = entity2Input.value.trim();
 
