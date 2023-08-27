@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Tabla de Información</title>
 </head>
 <body>
@@ -13,10 +13,10 @@
 
     <main>
         <form id="data-form">
-            <label for="entity1">Entidad 1:</label>
+            <label for="entity1">Nombre Producto:</label>
             <input type="text" id="entity1" name="entity1" required>
             <br>
-            <label for="entity2">Entidad 2:</label>
+            <label for="entity2">Precio Producto:</label>
             <input type="text" id="entity2" name="entity2" required>
             <br>
             <button type="button" id="add-btn">Agregar a la tabla</button>
@@ -25,8 +25,8 @@
         <table id="data-table">
             <thead>
                 <tr>
-                    <th>Entidad 1</th>
-                    <th>Entidad 2</th>
+                    <th>Nombre</th>
+                    <th>precio</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -34,6 +34,6 @@
         </table>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

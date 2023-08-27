@@ -1,4 +1,5 @@
-   const addBtn = document.getElementById("add-btn");
+document.addEventListener("DOMContentLoaded", function() {
+    const addBtn = document.getElementById("add-btn");
     const entity1Input = document.getElementById("entity1");
     const entity2Input = document.getElementById("entity2");
     const dataTable = document.querySelector("#data-table tbody");
@@ -52,5 +53,6 @@
         dataTable.appendChild(newRow);
     }
 });
+
 
 
